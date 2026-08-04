@@ -1,0 +1,2 @@
+# Secure Digital Wallet System
+1. 💳 Secure Digital Wallet System (ඩිජිටල් ගෙවීම් පද්ධතියක්) 🎯 Scope (විෂය පථය): Secure User Authentication (JWT, OAuth භාවිතයෙන් ලොග් වීම). මුදල් යැවීම සහ ලබාගැනීම (Transaction simulations). Transaction history එකක් සහ account balance එක පෙන්නීම. දත්ත ආරක්ෂිතව ගබඩා කිරීම (Basic Data Encryption). 🛠️ Tech Stack Suggestion: React/Flutter (Frontend), Node.js/Spring Boot (Backend), MySQL/PostgreSQL.   
