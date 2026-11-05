@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: securepay-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_USER: securepay
+      POSTGRES_PASSWORD: securepay_local_dev_only
+      POSTGRES_DB: securepay_db
+
+    ports:
+      - "127.0.0.1:5432:5432"
+
+    volumes:
+      - securepay_pgdata:/var/lib/postgresql/data
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U securepay -d securepay_db"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  securepay_pgdata:
