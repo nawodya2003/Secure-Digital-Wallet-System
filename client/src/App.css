@@ -182,3 +182,74 @@
     border-right-color: var(--border);
   }
 }
+
+.status-card {
+  margin-bottom: 20px;
+}
+
+.status-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.status-card input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  background: #0b1425;
+  color: #f8fafc;
+  font: inherit;
+}
+
+.status-card input:focus {
+  outline: 2px solid #60a5fa;
+  outline-offset: 1px;
+}
+
+.status-card button {
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  padding: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.status-card button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.status-card .secondary {
+  background: #1e293b;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.status-card .small-button {
+  padding: 9px 14px;
+}
+
+.balance-box {
+  padding: 25px;
+  margin: 24px 0;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #1d4ed8, #0f172a);
+}
+
+.balance-box span,
+.balance-box small {
+  color: #bfdbfe;
+}
+
+.balance-box small {
+  overflow-wrap: anywhere;
+}
+
+.balance-box h1 {
+  font-size: clamp(25px, 5vw, 40px);
+}
